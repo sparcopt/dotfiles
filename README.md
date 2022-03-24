@@ -20,29 +20,40 @@ This repository manages configurations for the following applications:
 ## 💻 Setup
 Follow this steps if you want to customize your CLI like mine:  
 
-1. **[shell]** Install zsh  
+1. **[font]** Install FiraCode
+   - Download FiraCode.zip from the nerd-font [release page](https://github.com/ryanoasis/nerd-fonts/releases)
+   - If you are on Windows, install all the "Windows compatible" files
+   - Set the font on your terminal. I'm using ``` FiraCode NF Retina``` 
+3. **[shell]** Install zsh  
    - ```sudo apt-get update```  
    - ```sudo apt-get install zsh -y```   
    - ```chsh -s $(which zsh)``` (make it the default shell)   
    - Log out and log back in again to use your new default shell
-2. **[prompt]** Install oh-my-posh  
+4. **[prompt]** Install oh-my-posh  
    - I used homebrew but there are other ways to install it (homebrew is recommended as my prompt configuration is linked to homebrew)
    - ```brew tap jandedobbeleer/oh-my-posh```  
    - ```brew install oh-my-posh```  
-3. **[icons]** Install LSDeluxe
+5. **[icons]** Install LSDeluxe
    - ```sudo dpkg -i lsd_0.21.0_amd64.deb``` from [this release page](https://github.com/Peltoche/lsd/releases) (adjust the package name if needed)
-4. **[ls colors]** Install LS_COLORS
+6. **[ls colors]** Install LS_COLORS
    - Download ```lscolors.sh``` from [this repo](https://github.com/trapd00r/LS_COLORS) and place it in your home directory ```~/``` or ```/home/<username>/```
-5. **[config]** Apply my configurations
+7. **[config]** Apply my configurations
    - ```sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply sparcopt```
-6. Reload your shell
+8. Reload your shell
    - ```source ~/.zshrc```  
 
 #### Optional
 
 7. **[editor]** Install neovim
    - ```sudo apt install neovim```  
-  
+
+#### Specific to Windows terminal (that I use)
+8. **[terminal]** 
+   - Set background opacity to 50% on Settings > Defaults > Transparency
+   - Enable acrylic on Settings > Defaults > Transparency
+   - Settings > Open JSON file, go to schemes, change the background value of ```One Half Dark``` to ```"background": "#001B26"```
+   - Set the color scheme as ```One Half Dark``` in Settings > Appearance
+
 ## 🔨 WSL2 fixs
 These are changes for WSL2 end users:
 
