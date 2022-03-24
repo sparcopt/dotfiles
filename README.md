@@ -1,4 +1,6 @@
-# 📂 My personal dotfiles
+# 📂 My personal dotfiles  
+
+![image](https://user-images.githubusercontent.com/20686451/160021681-62474e99-daa0-4f40-9f9a-586e783736ca.png)
 
 ## 📦 Installation
 To install these configuration files you need [chezmoi](https://www.chezmoi.io/install/#one-line-binary-install) installed on your system.  
