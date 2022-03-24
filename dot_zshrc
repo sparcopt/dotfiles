@@ -37,7 +37,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Use prompt from oh-my-posh (installed with brew)
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(oh-my-posh prompt init zsh --config /mnt/c/Users/jose.almeida/Documents/Powershell/sparcopt.omp.json)"
+eval "$(oh-my-posh prompt init zsh --config ~/.config/ohmyposhthemes/.sparcopt.omp.json)"
 
 # Use custom lscolors (https://github.com/trapd00r/LS_COLORS)
 source "/home/sparcopt/lscolors.sh"
