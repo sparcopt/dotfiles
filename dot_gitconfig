@@ -1,0 +1,5 @@
+[core]
+	; Very specific settings when developing from Windows and using WSL
+	; https://momane.com/how-to-fix-git-show-all-file-as-modified-in-wsl
+	filemode = false
+	autocrlf = true
